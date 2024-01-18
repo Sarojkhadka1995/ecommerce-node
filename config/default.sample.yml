@@ -1,0 +1,51 @@
+db:
+  POSTGRES_USER:
+  POSTGRES_PASSWORD: 
+  POSTGRES_DB:
+  POSTGRES_HOST:
+  POSTGRES_PORT: 
+
+cms:
+  SESSION_SECRET: ecommerce_session_secret
+  COOKIE_SECRET: ecommerce_cookie_secret
+  PAGE_LIMIT: 20
+  COOKIE_MAXAGE_IN_SEC: 7200
+  CMS_DEBUG: true
+
+ENV: development
+
+redis:
+  REDIS_PORT: 6379
+  REDIS_HOST: 127.0.0.1
+  REDIS_TTL:
+
+mail:
+  MAIL_HOST: sandbox.smtp.mailtrap.io
+  MAIL_PORT: 2525
+  MAIL_FROM_ADDRESS: noreply@mail.com
+  MAIL_USERNAME: 50185f7c72c052
+  MAIL_PASSWORD: 79e1a05308bd22
+
+API_DEBUG: true
+
+throttle:
+  freeTries: 5
+  waitTime: 60
+  loginThrottleTime: 60
+
+gameApiConfig:
+  forgotPasswordThrottleTime: 1
+
+MOBILE_API_URL: 'http://localhost:4444/'
+
+ports:
+  API_PORT: 4444
+
+stripe:
+  secretKey:
+
+tokens:
+  accessTokenExpiry: 7200
+  refreshTokenExpiry: 7200
+  accessTokenSecret: accesstokensecret
+  refreshTokenSecret: refreshtokensecret
